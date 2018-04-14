@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <link rel="stylesheet" type="text/css" href="Main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        //TODO lastclicked div in session state, for handling animations
+        $(document).ready(function(){
+            $("#aboutLink").on("click", function(e) {
+                e.preventDefault();
+                $('#ABOUT').animate({right: '0%'}, "slow");
+
+
+                $('#aboutImage').delay(500).slideToggle(1000);
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div id="menu">
+        <a id='homeLink' href=''><div class ='navButton'>HOME</div></a>
+        <a id='aboutLink' href=''><div class ='navButton'>ABOUT</div></a>
+        <a id='workLink' href=''><div class ='navButton'>WORK</div></a>
+    </div>
+
+    <div id="image">
+        <img id="headerImage" src="../lib/Background.png"></img>
+    </div>
+
+
+    <div id="ABOUT">
+
+    </div>
+
+    <div id="aboutImage">
+
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
