@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script>
-        $(document).ready(function(){
+        $(document).ready(function() {
             var lastClicked = 'home';
 
             function animateWorkPanels(percentage) {
@@ -18,54 +18,71 @@
                 $('#workD').delay(900).animate({'margin-top': percentage + '%'}, 1000);
             }
 
-            $("#homeLink").on("click", function(e) {
+            $("#homeLink").on("click", function (e) {
                 e.preventDefault();
                 if (lastClicked == 'about') {
+                    $(".navButton").css("pointer-events", "none");
                     lastClicked = 'home';
                     $('#about').slideToggle(1000);
                     $('#filter').delay(1000).animate({right: '100%'}, "slow");
-                } if (lastClicked == 'work') {
+                    setTimeout(function() { $(".navButton").delay(8000).css("pointer-events", "auto");}, 1500)
+                }
+                if (lastClicked == 'work') {
+                    $(".navButton").css("pointer-events", "none");
                     lastClicked = 'home';
                     animateWorkPanels(100);
                     $('#filter').delay(1000).animate({right: '100%'}, "slow");
+                    setTimeout(function() { $(".navButton").delay(8000).css("pointer-events", "auto");}, 1800)
                 }
             });
 
-            $("#aboutLink").on("click", function(e) {
+            $("#aboutLink").on("click", function (e) {
                 e.preventDefault();
                 if (lastClicked == 'home') {
+                    $(".navButton").css("pointer-events", "none");
                     lastClicked = 'about';
                     $('#filter').animate({right: '0%'}, "slow");
                     $('#about').delay(500).slideToggle(1000);
-                } if (lastClicked == 'work') {
+                    setTimeout(function() { $(".navButton").delay(8000).css("pointer-events", "auto");}, 1500)
+                }
+                if (lastClicked == 'work') {
+                    $(".navButton").css("pointer-events", "none");
                     lastClicked = 'about';
                     animateWorkPanels(100);
                     $('#about').delay(1000).slideToggle(1000);
+                    setTimeout(function() { $(".navButton").delay(8000).css("pointer-events", "auto");}, 2000)
                 }
             });
 
             $("#workLink").on("click", function(e) {
                 e.preventDefault();
                 if (lastClicked == 'home') {
+                    $(".navButton").css("pointer-events", "none");
                     lastClicked = 'work';
                     $('#filter').animate({right: '0%'}, "slow");
                     animateWorkPanels(0);
-                } if (lastClicked == 'about') {
+                    setTimeout(function() { $(".navButton").delay(8000).css("pointer-events", "auto");}, 2000)
+                }
+                if (lastClicked == 'about') {
+                    $(".navButton").css("pointer-events", "none");
                     lastClicked = 'work';
                     $('#about').slideToggle(1000);
                     animateWorkPanels(0);
+                    setTimeout(function() { $(".navButton").delay(8000).css("pointer-events", "auto");}, 2000)
                 }
+
             });
         });
+
     </script>
 
 </head>
 <body>
     <!--website wide menu-->
     <div id="menu">
-        <a id='homeLink' href=''><div class ='navButton'>HOME</div></a>
-        <a id='aboutLink' href=''><div class ='navButton'>ABOUT</div></a>
-        <a id='workLink' href=''><div class ='navButton'>WORK</div></a>
+        <a id='homeLink' class ='navButton' href=''>HOME</a>
+        <a id='aboutLink' class ='navButton' href=''>ABOUT</a>
+        <a id='workLink' class ='navButton' href=''>WORK</a>
     </div>
 
     <!--homepage-->
