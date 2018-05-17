@@ -8,7 +8,7 @@
 html, body {
     margin: 0px;
     height: 100%;
-    background-color: black;
+    background-color: #c3d2d5;
     overflow: hidden;
     outline:none;
     -webkit-touch-callout: none;
@@ -37,8 +37,8 @@ html, body {
     margin-left: 60%;
     display: block;
     color: white;
-    /* subject to change */
-    font-family: Arial;
+    font-size: 130%;
+    font-family: "Calibri";
 }
 
 #filter {
@@ -56,13 +56,11 @@ html, body {
 /*_____________________________Home_________________________*/
 
 #image {
-    position: fixed;
-    margin-left: -10%;
-}
-
-#headerImage {
-    width: 100%;
-    z-index: 1;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    background-image: url("../lib/Background.jpg");
+    background-size: cover;
 }
 
 
@@ -90,29 +88,42 @@ html, body {
     color: #1c1c1b;
 }
 
-#text {
+#intro {
     position: absolute;
     margin-top: 25%;
     width: 100%;
     background-color: transparent;
     text-align: center;
     font-size: 150%;
+    font-family: "Calibri Light";
+    color: #1c1c1b;
+}
+
+#text {
+    position: absolute;
+    margin-top: 40%;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    font-size: 110%;
+    font-family: "Calibri Light";
     color: #1c1c1b;
 }
 
 #contact {
     position: absolute;
-    margin-top: 42%;
+    margin-top: 55%;
     width: 100%;
     background-color: transparent;
     text-align: center;
-    font-size: 110%;
+    font-size: 100%;
+    font-family: "Calibri Light";
     color: #1c1c1b;
 }
 
 .logo { height: 30px; }
 
-#LinkedIn { margin-left: 2%; }
+#LinkedIn { margin-left: 3%; }
 
 
 
@@ -153,8 +164,7 @@ html, body {
     text-align: center;
     font-size: 200%;
     display: none;
-    /* subject to change */
-    font-family: Arial;
+    font-family: "Calibri";
 }
 
 .workSubTitle {
@@ -165,8 +175,7 @@ html, body {
     color: white;
     background-color: transparent;
     text-align: center;
-    font-size: large;
+    font-size: 130%;
     display: none;
-    /* subject to change */
-    font-family: Arial;
+    font-family: "Calibri";
 }

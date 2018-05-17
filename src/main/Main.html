@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-
-    <link rel="stylesheet" type="text/css" href="Main.css">
+    <link rel='stylesheet' media='screen and (min-width: 1900px)' href='Main_large.css' />
+    <!--TODO ADD OTHER SCREEN SIZES-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script>
@@ -85,7 +86,7 @@
 </head>
 <body>
 
-    <!-- I see, a curious individual!
+    <!-- A curious individual, I see!
     There are a few easter eggs hidden in this document that will
     tell you a bit about me and my interests, happy hunting!
     -->
@@ -98,9 +99,7 @@
     </div>
 
     <!--homepage-->
-    <div id="image">
-        <img id="headerImage" src="../lib/Background.png"/>
-    </div>
+    <div id="image"></div>
 
     <!--Black filter-->
     <div id="filter"></div>
@@ -112,12 +111,20 @@
             <p>"Reducing  the  human  footprint  on  earth" *</p>
         </div>
 
-        <div id="text">
+        <div id="intro">
             <p>My name is Mark.<br> I am a second year software engineering student <br>
                 at the applied university of Utrecht (The Netherlands). I have a multitude of interests, <br>
                 of which you can find a few under 'WORK'.
             </p>
-            <!--TODO add more text and explanation for slogan-->
+        </div>
+
+        <div id="text">
+            <p>The quote above is my personal WHY. It's what drives me and my actions.<br>
+                Professionally, I want to focus on one or more of the following areas: <br>
+                Energy, Transport, the Meat Industry and Space <br>
+                The only part missing is the HOW. There is a vision, and <br>
+                the fun part of it is the process.
+            </p>
         </div>
 
         <div id="contact">
@@ -134,22 +141,21 @@
         <!--first project panel-->
         <p id="workATitle" class="workTitle">LANGUAGEMAP</p>
         <p id="workASubTitle" class="workSubTitle">A Scratchmap for Languages</p>
-        <!--<img id="workAImage" src="../lib/languagemap.jpg"/>-->
     </div>
 
     <!--TODO surround with link-->
     <div id="workB" class="projectPanel">
         <!--second project panel-->
         <p id="workBTitle" class="workTitle">AVASERALA</p>
-        <p id="workBSubTitle" class="workSubTitle">Work in Progress</p>
+        <p id="workBSubTitle" class="workSubTitle">A "Smart" Light<br> Work in Progress</p>
     </div>
 
     <!--TODO surround with link-->
     <div id="workC" class="projectPanel">
         <!--third project panel-->
         <!--TODO add photo-->
-        <p id="workCTitle" class="workTitle">COMING SOON</p>
-        <p id="workCSubTitle" class="workSubTitle">TBD</p>
+        <p id="workCTitle" class="workTitle">SIDEKICK MATTIE</p>
+        <p id="workCSubTitle" class="workSubTitle">PC Version of the mobile app <br> Work in Progress</p>
     </div>
 
     <!--TODO surround with link-->
