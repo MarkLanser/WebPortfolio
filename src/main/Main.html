@@ -11,6 +11,7 @@
     <script>
         $(document).ready(function() {
             var lastClicked = 'home';
+            var cvClicked = null;
 
             function animateWorkPanels(percentage) {
                 $('#workA').animate({'margin-top': percentage + '%'}, 1000);
@@ -30,10 +31,14 @@
             $("#homeLink").on("click", function (e) {
                 e.preventDefault();
                 if (lastClicked == 'about') {
+                    if (cvClicked == true) {
+                        $('#cv').animate({'margin-left' : '100%'}, 1000);
+                        cvClicked = false;
+                    }
                     $(".navButton").css("pointer-events", "none");
                     lastClicked = 'home';
-                    $('#about').slideToggle(1000);
-                    $('#filter').delay(1000).animate({right: '100%'}, "slow");
+                    $('#about').slideToggle(1500);
+                    $('#filter').delay(1500).animate({right: '100%'}, "slow");
                     setTimeout(function() { $(".navButton").delay(8000).css("pointer-events", "auto");}, 1500)
                 }
                 if (lastClicked == 'work') {
@@ -73,12 +78,29 @@
                     setTimeout(function() { $(".navButton").delay(8000).css("pointer-events", "auto");}, 4000)
                 }
                 if (lastClicked == 'about') {
+                    if (cvClicked == true) {
+                        $('#cv').animate({'margin-left' : '100%'}, 1000);
+                        cvClicked = false;
+                    }
                     $(".navButton").css("pointer-events", "none");
                     lastClicked = 'work';
                     $('#about').slideToggle(1000);
                     animateWorkPanels(0);
                     setTimeout(function() { $(".navButton").delay(8000).css("pointer-events", "auto");}, 4000)
                 }
+            });
+
+            $("#CVLink").on("click", function (e) {
+                e.preventDefault();
+                $("#CVLink").css("pointer-events", "none");
+                if (cvClicked == true) {
+                    $('#cv').animate({'margin-left' : '100%'}, 1000);
+                    cvClicked = false;
+                } else {
+                    $('#cv').animate({'margin-left' : '43%'}, 1000);
+                    cvClicked = true;
+                }
+                setTimeout(function() { $("#CVLink").css("pointer-events", "auto");}, 1500)
             });
         });
     </script>
@@ -111,14 +133,14 @@
             <p>"Reducing  the  human  footprint  on  earth" *</p>
         </div>
 
-        <div id="intro">
+        <div id="intro" class="aboutText">
             <p>My name is Mark.<br> I am a second year software engineering student <br>
                 at the applied university of Utrecht (The Netherlands). I have a multitude of interests, <br>
                 of which you can find a few under 'WORK'.
             </p>
         </div>
 
-        <div id="text">
+        <div id="text" class="aboutText">
             <p>The quote above is my personal WHY. It's what drives me and my actions.<br>
                 Professionally, I want to focus on one or more of the following areas: <br>
                 Energy, Transport, the Meat Industry and Space <br>
@@ -127,11 +149,63 @@
             </p>
         </div>
 
-        <div id="contact">
+        <a id="CVLink" href='' ><div id="cvButton" class="aboutText">C V</div></a>
+
+        <div id="contact" class="aboutText">
             <p>Markklanser@gmail.com<br><br>
             <a href="https://github.com/MarkLanser"><img class="logo" src="../lib/GitHub.png"/></a>
             <a href="https://www.linkedin.com/in/mark-lanser/"><img id="LinkedIn" class="logo" src="../lib/LinkedIn.png"/></a>
             <p>* trying to </p>
+        </div>
+
+        <div id="cv">
+            <div id="cvHeader" class="aboutText">CURRICULUM VITAE</div>
+            <div id="educationHeader" class="aboutText">EDUCATION</div>
+            <div id="accomplishmentsHeader" class="aboutText">ACCOMPLISHMENTS</div>
+            <div id="languagesHeader" class="aboutText">LANGUAGES</div>
+
+            <!--TODO change whitespaces-->
+            <div id="leftColumn" class="aboutText">
+                <div id="educationL">
+                    <p>2016-NOW<br><br></p>
+                    <p>2014-2015</p>
+                    <p>2009-2014<br><br><br><br><br><br></p>
+                </div>
+
+                <div id="accomplishmentsL">
+                    <p>2017-NOW<br><br><br><br><br></p>
+                </div>
+                <div id="languagesL">
+                    <!--TODO add icon pngs-->
+                    <p>Native language<br>
+                    <p>Fluent<br>
+                    <p>Conversant<br>
+                    <p>Basic knowledge<br>
+                    <p>Basic knowledge<br>
+                </div>
+            </div>
+
+            <div id="rightColumn" class="aboutText">
+                <div id="educationR">
+                    <p>Software & Information Engineering <br> Applied University of Utrecht</p>
+                    <p>Design Academy Eindhoven</p>
+                    <p>HAVO <br> Corlaer College Nijkerk<br><br><br><br><br></p>
+                </div>
+
+                <div id="accomplishmentsR">
+                    <p>Honours program<br><br><br><br><br></p>
+                </div>
+
+                <div id="languagesR">
+                    <p>Dutch (Nederlands)<br></p>
+                    <p>English (VS/UK)<br></p>
+                    <p>French (Francais)<br></p>
+                    <p>German (Deutsch)<br></p>
+                    <p>Chinese (中文)<br></p>
+                </div>
+            </div>
+
+
         </div>
     </div>
 

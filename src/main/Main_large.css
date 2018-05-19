@@ -28,8 +28,9 @@ html, body {
     margin-top: 10%;
 }
 
-#menu a:link, a:visited {
+a:link, a:visited {
     text-decoration: none;
+    outline: none;
 }
 
 .navButton {
@@ -77,6 +78,11 @@ html, body {
     z-index: 4;
 }
 
+.aboutText {
+    font-family: "Calibri Light";
+    color: #1c1c1b;
+}
+
 #slogan {
     position: absolute;
     margin-top: 10%;
@@ -95,8 +101,7 @@ html, body {
     background-color: transparent;
     text-align: center;
     font-size: 150%;
-    font-family: "Calibri Light";
-    color: #1c1c1b;
+
 }
 
 #text {
@@ -106,26 +111,98 @@ html, body {
     background-color: transparent;
     text-align: center;
     font-size: 110%;
-    font-family: "Calibri Light";
-    color: #1c1c1b;
+}
+
+#cvButton:hover {
+    background-color: #1c1c1b;
+    color: #fffffa;
+}
+
+#cvButton {
+    margin-left: 39%;
+    margin-top: 52%;
+    width: 21%;
+    height: 3%;
+    border: 1px solid #1c1c1b;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 150%;
+    font-size: 110%;
+
 }
 
 #contact {
     position: absolute;
-    margin-top: 55%;
+    margin-top: 3%;
     width: 100%;
     background-color: transparent;
     text-align: center;
     font-size: 100%;
-    font-family: "Calibri Light";
-    color: #1c1c1b;
 }
 
 .logo { height: 30px; }
 
 #LinkedIn { margin-left: 3%; }
 
+#cv {
+    margin-top: -37%;
+    width: 27%;
+    height: 200%;
+    position: fixed;
+    background-color: #fffffa;
+    border-left: 1px solid #1c1c1b;
+    margin-left: 100%;
+    z-index: 8;
+}
 
+#cvHeader {
+    position: absolute;
+    margin-top: 5%;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    font-size: 200%;
+}
+
+#educationHeader {
+    position: absolute;
+    margin-top: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 150%;
+}
+
+#accomplishmentsHeader {
+    position: absolute;
+    margin-top: 65%;
+    width: 100%;
+    text-align: center;
+    font-size: 150%
+}
+
+#languagesHeader {
+    position: absolute;
+    margin-top: 87%;
+    width: 100%;
+    text-align: center;
+    font-size: 150%;
+}
+
+#leftColumn {
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 10%;
+    width: 25%;
+    height: 100%;
+}
+
+#rightColumn {
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 35%;
+    width: 55%;
+    height: 100%;
+}
 
 /*_____________________________WORK_________________________*/
 
