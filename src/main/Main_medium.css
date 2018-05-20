@@ -5,28 +5,6 @@
    tell you a bit about me and my interests, happy hunting!
 */
 
-
-@media screen and (min-width: 1800px) {
-    #slogan { font-size: 350%;}
-    #intro { font-size: 150%;}
-    #text { font-size: 110%;}
-    #contact { font-size: 110%;}
-}
-
-@media screen and (min-width: 1400px) and (max-width: 1800px) {
-    #slogan { font-size: 275%;}
-    #intro { font-size: 110%;}
-    #text { font-size: 90%;}
-    #contact { font-size: 90%;}
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1400px){
-    #slogan { font-size: 200%;}
-    #intro { font-size: 100%;}
-    #text { font-size: 80%;}
-    #contact { font-size: 80%;}
-}
-
 html, body {
     margin: 0px;
     height: 100%;
@@ -47,7 +25,7 @@ html, body {
     height: 80%;
     position: fixed;
     z-index: 999;
-    margin-top: 10vh;
+    margin-top: 10%;
 }
 
 a:link, a:visited {
@@ -107,32 +85,32 @@ a:link, a:visited {
 
 #slogan {
     position: absolute;
-    margin-top: 8vh;
+    margin-top: 10%;
     width: 100%;
-    min-height: 8%;
-    background-color: #fffffa;
+    background-color: transparent;
     text-align: center;
+    font-size: 210%;
     font-family: Georgia;
     color: #1c1c1b;
-    z-index: 20;
 }
 
 #intro {
     position: absolute;
-    margin-top: 25vh;
+    margin-top: 25%;
     width: 100%;
-    background-color: #fffffa;
+    background-color: transparent;
     text-align: center;
-    z-index: 19;
+    font-size: 100%;
+
 }
 
 #text {
     position: absolute;
-    margin-top: 42vh;
+    margin-top: 40%;
     width: 100%;
-    background-color: #fffffa;
+    background-color: transparent;
     text-align: center;
-    z-index: 18;
+    font-size: 90%;
 }
 
 #cvButton:hover {
@@ -142,45 +120,44 @@ a:link, a:visited {
 
 #cvButton {
     margin-left: 39%;
-    margin-top: 1vh;
+    margin-top: 55%;
     width: 21%;
     height: 3%;
     border: 1px solid #1c1c1b;
     border-radius: 20px;
     text-align: center;
     line-height: 150%;
-    font-size: 110%;
+    font-size: 90%;
 
 }
 
 #contact {
     position: absolute;
-    margin-top: 65vh;
+    margin-top: 3%;
     width: 100%;
-    background-color: #fffffa;
+    background-color: transparent;
     text-align: center;
-    z-index: 17;
+    font-size: 100%;
 }
 
 .logo { height: 30px; }
 
 #LinkedIn { margin-left: 3%; }
 
-/*TODO change margins, z-index */
-/*TODO and background color */
 #cv {
+    margin-top: -37%;
     width: 27%;
-    height: 100%;
+    height: 200%;
     position: fixed;
     background-color: #fffffa;
     border-left: 1px solid #1c1c1b;
     margin-left: 100%;
-    z-index: 21;
+    z-index: 8;
 }
 
 #cvHeader {
     position: absolute;
-    margin-top: 5vh;
+    margin-top: 5%;
     width: 100%;
     background-color: transparent;
     text-align: center;
@@ -189,7 +166,7 @@ a:link, a:visited {
 
 #educationHeader {
     position: absolute;
-    margin-top: 15vh;
+    margin-top: 20%;
     width: 100%;
     text-align: center;
     font-size: 150%;
@@ -197,7 +174,7 @@ a:link, a:visited {
 
 #accomplishmentsHeader {
     position: absolute;
-    margin-top: 40vh;
+    margin-top: 65%;
     width: 100%;
     text-align: center;
     font-size: 150%
@@ -205,7 +182,7 @@ a:link, a:visited {
 
 #languagesHeader {
     position: absolute;
-    margin-top: 87vh;
+    margin-top: 87%;
     width: 100%;
     text-align: center;
     font-size: 150%;
@@ -213,7 +190,7 @@ a:link, a:visited {
 
 #leftColumn {
     position: absolute;
-    margin-top: 20vh;
+    margin-top: 25%;
     margin-left: 10%;
     width: 25%;
     height: 100%;
@@ -221,16 +198,13 @@ a:link, a:visited {
 
 #rightColumn {
     position: absolute;
-    margin-top: 20vh;
+    margin-top: 25%;
     margin-left: 35%;
     width: 55%;
     height: 100%;
 }
 
 /*_____________________________WORK_________________________*/
-
-/*TODO change margins, z-index */
-/*TODO and background color */
 
 .projectPanel {
     position: fixed;
