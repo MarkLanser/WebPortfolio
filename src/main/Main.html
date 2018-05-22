@@ -4,107 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel='stylesheet' href='Main_large.css' />
-    <!--TODO ADD CSS FOR PHONE SCREENS-->
+    <link rel='stylesheet' media="screen and (min-width: 1024px)" href='Main_large.css' />
+    <link rel='stylesheet' media="screen and (max-width: 1024px)" href='Main_small.css' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            var lastClicked = 'home';
-            var cvClicked = null;
-
-            function animateWorkPanels(percentage) {
-                $('#workA').animate({'margin-top': percentage + '%'}, 1000);
-                $('#workATitle').delay(700).fadeToggle(1000);
-                $('#workASubTitle').delay(1000).fadeToggle(1000);
-                $('#workB').delay(300).animate({'margin-top': percentage + '%'}, 1000);
-                $('#workBTitle').delay(1300).fadeToggle(1000);
-                $('#workBSubTitle').delay(1600).fadeToggle(1000);
-                $('#workC').delay(600).animate({'margin-top': percentage + '%'}, 1000);
-                $('#workCTitle').delay(1900).fadeToggle(1000);
-                $('#workCSubTitle').delay(2200).fadeToggle(1000);
-                $('#workD').delay(900).animate({'margin-top': percentage + '%'}, 1000);
-                $('#workDTitle').delay(2400).fadeToggle(1000);
-                $('#workDSubTitle').delay(2600).fadeToggle(1000);
-            }
-
-            $("#homeLink").on("click", function (e) {
-                e.preventDefault();
-                if (lastClicked == 'about') {
-                    if (cvClicked == true) {
-                        $('#cv').animate({'margin-left' : '100%'}, 1000);
-                        cvClicked = false;
-                    }
-                    $(".navButton").css("pointer-events", "none");
-                    lastClicked = 'home';
-                    $('#about').slideToggle(1500);
-                    $('#filter').delay(1500).animate({right: '100%'}, "slow");
-                    setTimeout(function() { $(".navButton").delay(8000).css("pointer-events", "auto");}, 1500)
-                }
-                if (lastClicked == 'work') {
-                    $(".navButton").css("pointer-events", "none");
-                    lastClicked = 'home';
-                    animateWorkPanels(100);
-                    $('#filter').delay(1000).animate({right: '100%'}, "slow");
-                    setTimeout(function() { $(".navButton").delay(8000).css("pointer-events", "auto");}, 1800)
-                }
-            });
-
-            $("#aboutLink").on("click", function (e) {
-                e.preventDefault();
-                if (lastClicked == 'home') {
-                    $(".navButton").css("pointer-events", "none");
-                    lastClicked = 'about';
-                    $('#filter').animate({right: '0%'}, "slow");
-                    $('#about').delay(500).slideToggle(1000);
-                    setTimeout(function() { $(".navButton").delay(8000).css("pointer-events", "auto");}, 1500)
-                }
-                if (lastClicked == 'work') {
-                    $(".navButton").css("pointer-events", "none");
-                    lastClicked = 'about';
-                    animateWorkPanels(100);
-                    $('#about').delay(1000).slideToggle(1000);
-                    setTimeout(function() { $(".navButton").delay(8000).css("pointer-events", "auto");}, 2000)
-                }
-            });
-
-            $("#workLink").on("click", function(e) {
-                e.preventDefault();
-                if (lastClicked == 'home') {
-                    $(".navButton").css("pointer-events", "none");
-                    lastClicked = 'work';
-                    $('#filter').animate({right: '0%'}, "slow");
-                    animateWorkPanels(0);
-                    setTimeout(function() { $(".navButton").delay(8000).css("pointer-events", "auto");}, 4000)
-                }
-                if (lastClicked == 'about') {
-                    if (cvClicked == true) {
-                        $('#cv').animate({'margin-left' : '100%'}, 1000);
-                        cvClicked = false;
-                    }
-                    $(".navButton").css("pointer-events", "none");
-                    lastClicked = 'work';
-                    $('#about').slideToggle(1000);
-                    animateWorkPanels(0);
-                    setTimeout(function() { $(".navButton").delay(8000).css("pointer-events", "auto");}, 4000)
-                }
-            });
-
-            $("#CVLink").on("click", function (e) {
-                e.preventDefault();
-                $("#CVLink").css("pointer-events", "none");
-                if (cvClicked == true) {
-                    $('#cv').animate({'margin-left' : '100%'}, 1000);
-                    cvClicked = false;
-                } else {
-                    $('#cv').animate({'margin-left' : '43%'}, 1000);
-                    cvClicked = true;
-                }
-                setTimeout(function() { $("#CVLink").css("pointer-events", "auto");}, 1500)
-            });
-        });
-    </script>
-
+    <script type="text/javascript" src="Animation.js"></script>
 </head>
 <body>
 
@@ -134,8 +37,8 @@
         </div>
 
         <div id="intro" class="aboutText">
-            <p>My name is Mark.<br> I am a second year software engineering student <br>
-                at the applied university of Utrecht (The Netherlands). I have a multitude of interests, <br>
+            <p>My name is Mark.<br> I am a second year software engineering student at the<br>
+                University of Applied Sciences Utrecht (The Netherlands). I have a multitude of interests, <br>
                 of which you can find a few under 'WORK'.
             </p>
         </div>
@@ -168,18 +71,18 @@
                     <p>2009-2014</p><br>
                 </div>
                 <div id="educationR" class="aboutText rightColumn">
-                    <p>Software & Information Engineering <br> Applied University of Utrecht</p>
+                    <p>Software & Information Engineering <br> University of Applied Sciences Utrecht</p>
                     <p>Design Academy Eindhoven</p>
                     <p>HAVO <br> Corlaer College Nijkerk</p>
                 </div>
             </div>
-            <div id="accomplishments">
-                <div id="accomplishmentsHeader" class="aboutText">ACCOMPLISHMENTS</div>
-                <div id="accomplishmentsL" class="aboutText leftColumn">
+            <div id="work">
+                <div id="workHeader" class="aboutText">WORK</div>
+                <div id="workL" class="aboutText leftColumn">
                     <p>2017-NOW</p>
                 </div>
-                <div id="accomplishmentsR" class="aboutText rightColumn">
-                    <p>Honours program</p>
+                <div id="workR" class="aboutText rightColumn">
+                    <p>Placeholder</p>
                 </div>
             </div>
 

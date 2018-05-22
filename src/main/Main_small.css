@@ -1,15 +1,9 @@
-
-
-/* Curious, I see!
-   There are a few easter eggs hidden in this document that will
-   tell you a bit about me and my interests, happy hunting!
-*/
+/*TODO ADD MEDIA QUERY FOR TABLET*/
 
 html, body {
     margin: 0px;
     height: 100%;
     background-color: #c3d2d5;
-    overflow: hidden;
     outline:none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -19,49 +13,20 @@ html, body {
     user-select: none;
 }
 
-#menu {
-    display: block;
-    width: 10%;
-    height: 80%;
-    position: fixed;
-    z-index: 999;
-    margin-top: 10%;
-}
-
-a:link, a:visited {
-    text-decoration: none;
-    outline: none;
-}
-
-.navButton {
-    margin-top: 20%;
-    margin-left: 60%;
-    display: block;
-    color: white;
-    font-size: 130%;
-    font-family: "Calibri";
-}
-
-#filter {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    z-index: 3;
-    margin-left: 100%;
-    opacity: 0.8;
-}
-
 
 
 /*_____________________________Home_________________________*/
 
+#menu {
+    display: none;
+}
+
 #image {
-    width: 40%;
-    height: 100%;
-    position: absolute;
+    width: 100vw;
+    height: 78vh;
     background-image: url("../lib/Background.jpg");
     background-size: cover;
+    margin-bottom: -2.5vh;
 }
 
 
@@ -69,190 +34,38 @@ a:link, a:visited {
 /*_____________________________ABOUT________________________*/
 
 #about {
-    display: none;
-    width: 67.5%;
-    height: 100%;
-    position: fixed;
     background-color: #fffffa;
-    margin-left: 32.5%;
-    z-index: 4;
+    height: auto;
+    text-align: center;
+    padding: 3vw;
 }
 
 .aboutText {
     font-family: "Calibri Light";
     color: #1c1c1b;
+    background-color: #fffffa;
 }
 
 #slogan {
-    position: absolute;
-    margin-top: 10%;
-    width: 100%;
-    background-color: transparent;
-    text-align: center;
-    font-size: 210%;
+    font-size: 150%;
     font-family: Georgia;
-    color: #1c1c1b;
 }
 
-#intro {
-    position: absolute;
-    margin-top: 25%;
-    width: 100%;
-    background-color: transparent;
-    text-align: center;
-    font-size: 100%;
+#cv { display: none; }
+#cvHeader { display: none; }
+#education { display: none; }
+#work { display: none; }
+#languages { display: none; }
 
-}
 
-#text {
-    position: absolute;
-    margin-top: 40%;
-    width: 100%;
-    background-color: transparent;
-    text-align: center;
-    font-size: 90%;
-}
-
-#cvButton:hover {
-    background-color: #1c1c1b;
-    color: #fffffa;
-}
-
-#cvButton {
-    margin-left: 39%;
-    margin-top: 55%;
-    width: 21%;
-    height: 3%;
-    border: 1px solid #1c1c1b;
-    border-radius: 20px;
-    text-align: center;
-    line-height: 150%;
-    font-size: 90%;
-
-}
-
-#contact {
-    position: absolute;
-    margin-top: 3%;
-    width: 100%;
-    background-color: transparent;
-    text-align: center;
-    font-size: 100%;
-}
-
-.logo { height: 30px; }
-
-#LinkedIn { margin-left: 3%; }
-
-#cv {
-    margin-top: -37%;
-    width: 27%;
-    height: 200%;
-    position: fixed;
-    background-color: #fffffa;
-    border-left: 1px solid #1c1c1b;
-    margin-left: 100%;
-    z-index: 8;
-}
-
-#cvHeader {
-    position: absolute;
-    margin-top: 5%;
-    width: 100%;
-    background-color: transparent;
-    text-align: center;
-    font-size: 200%;
-}
-
-#educationHeader {
-    position: absolute;
-    margin-top: 20%;
-    width: 100%;
-    text-align: center;
-    font-size: 150%;
-}
-
-#accomplishmentsHeader {
-    position: absolute;
-    margin-top: 65%;
-    width: 100%;
-    text-align: center;
-    font-size: 150%
-}
-
-#languagesHeader {
-    position: absolute;
-    margin-top: 87%;
-    width: 100%;
-    text-align: center;
-    font-size: 150%;
-}
-
-#leftColumn {
-    position: absolute;
-    margin-top: 25%;
-    margin-left: 10%;
-    width: 25%;
-    height: 100%;
-}
-
-#rightColumn {
-    position: absolute;
-    margin-top: 25%;
-    margin-left: 35%;
-    width: 55%;
-    height: 100%;
-}
 
 /*_____________________________WORK_________________________*/
 
 .projectPanel {
-    position: fixed;
-    width: 20%;
-    height: 100%;
-    background-color: black;
-    z-index: 5;
-    margin-top: 100%;
-}
-
-#workA {
-    margin-left: 20%;
-    background-image: url("../lib/languagemap.jpg");
-    background-size: cover;
-}
-
-#workB {
-    margin-left: 40%;
-    background-image: url("../lib/avaserala.png");
-    background-size: cover;
-}
-
-#workC { margin-left: 60%; }
-
-#workD { margin-left: 80%; }
-
-.workTitle {
-    width: 100%;
-    position: absolute;
-    margin-top: 57%;
-    z-index: 8;
-    color: white;
-    background-color: transparent;
+    background-color: #fffffa;
+    font-family: Calibri;
+    height: 20vh;
+    margin-top: -2.5vh;
+    border-top: solid black 1px;
     text-align: center;
-    font-size: 200%;
-    display: none;
-    font-family: "Calibri";
-}
-
-.workSubTitle {
-    width: 100%;
-    position: absolute;
-    margin-top: 77%;
-    z-index: 9;
-    color: white;
-    background-color: transparent;
-    text-align: center;
-    font-size: 130%;
-    display: none;
-    font-family: "Calibri";
 }

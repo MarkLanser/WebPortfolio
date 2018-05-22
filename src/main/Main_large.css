@@ -14,6 +14,7 @@
     .logo { height: 30px; }
     .leftColumn {font-size: 110%; }
     .rightColumn { font-size: 110%; }
+    #image { width: 40vw; }
 }
 
 @media screen and (min-width: 1400px) and (max-width: 1800px) {
@@ -24,7 +25,7 @@
     .logo { height: 20px; }
     .leftColumn {font-size: 90%; }
     .rightColumn { font-size: 90%; }
-    #educationHeader { }
+    #image { width: 40vw; }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1400px){
@@ -35,6 +36,7 @@
     .logo { height: 20px; }
     .leftColumn {font-size: 80%; }
     .rightColumn { font-size: 80%; }
+    #image { width: 50vw; }
 }
 
 
@@ -90,9 +92,8 @@ a:link, a:visited {
 /*_____________________________Home_________________________*/
 
 #image {
-    width: 40%;
-    height: 100%;
-    position: absolute;
+    height: 100vh;
+    position: fixed;
     background-image: url("../lib/Background.jpg");
     background-size: cover;
 }
@@ -114,6 +115,7 @@ a:link, a:visited {
 .aboutText {
     font-family: "Calibri Light";
     color: #1c1c1b;
+    background-color: #fffffa;
 }
 
 #slogan {
@@ -161,7 +163,6 @@ a:link, a:visited {
     text-align: center;
     line-height: 150%;
     font-size: 110%;
-
 }
 
 #contact {
@@ -174,10 +175,8 @@ a:link, a:visited {
 
 #LinkedIn { margin-left: 3%; }
 
-/*TODO change margins, z-index */
-/*TODO and background color */
 #cv {
-    width: 27%;
+    width: 32%;
     height: 100%;
     position: fixed;
     background-color: #fffffa;
@@ -191,7 +190,6 @@ a:link, a:visited {
     margin-top: 5vh;
     width: 100%;
     min-height: 5%;
-    background-color: #fffffa;
     text-align: center;
     font-size: 200%;
     z-index: 30;
@@ -205,28 +203,32 @@ a:link, a:visited {
 #education {
     margin-top: 15vh;
     z-index: 29;
-    background-color: #fffffa;
     height: 10%;
+    background-color: #fffffa;
+    position: relative;
 }
 
-#accomplishments {
-    background-color: #fffffa;
+#work {
     z-index: 28;
     margin-top: 20vh;
+    background-color: #fffffa;
+    position: relative;
 }
 
-#accomplishmentsHeader {
+#workHeader {
     text-align: center;
     font-size: 150%;
 }
 
-#accomplishmentsL {}
+#workL {}
 
-#accomplishmentsR {}
+#workR {}
 
 #languages {
     margin-top: 15vh;
-    z-index: 27;
+    z-index: 24;
+    background-color: #fffffa;
+    position: relative;
 }
 
 #languagesHeader {
