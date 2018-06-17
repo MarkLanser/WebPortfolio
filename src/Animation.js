@@ -5,6 +5,8 @@ $(document).ready(function() {
     function toggleWorkTitles () {
         $('.workTitle').delay(700).fadeToggle(1000);
         $('.workSubTitle').delay(1000).fadeToggle(1000);
+        $('.workText').delay(1300).fadeToggle(1000);
+        $('.workImage').delay(1600).fadeToggle(1000);
     }
 
     $("#homeLink").on("click", function (e) {
