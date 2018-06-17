@@ -84,7 +84,7 @@ a:link, a:visited {
 #image {
     height: 100vh;
     position: fixed;
-    background-image: url("../lib/Background.jpg");
+    background-image: url("./lib/Background.jpg");
     background-size: cover;
     margin-left: -4%;
 }
