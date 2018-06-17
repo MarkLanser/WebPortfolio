@@ -248,10 +248,9 @@ a:link, a:visited {
     width: 55%;
 }
 
-/*_____________________________WORK_________________________*/
 
-/*TODO change margins, z-index */
-/*TODO and background color */
+
+/*_____________________________WORK_________________________*/
 
 .projectPanel {
     position: fixed;
@@ -276,9 +275,7 @@ a:link, a:visited {
     height: 100vh;
 }
 
-.workImage:hover {
-    opacity: 0.1;
-}
+.workImage:hover { opacity: 0.1;}
 
 .workTitle {
     width: 100%;
