@@ -7,6 +7,8 @@
 
 
 @media screen and (min-width: 1800px) {
+    .navButton { font-size: 160%; }
+
     #slogan { font-size: 350%;}
     #intro { font-size: 150%;}
     #text { font-size: 110%;}
@@ -14,10 +16,17 @@
     .logo { height: 30px; }
     .leftColumn {font-size: 110%; }
     .rightColumn { font-size: 110%; }
+
     #image { width: 40vw; }
+
+    .workTitle { font-size: 200%; }
+    .workTitle { font-size: 120%; }
+    .workText { font-size: 90%; }
 }
 
 @media screen and (min-width: 1400px) and (max-width: 1800px) {
+    .navButton { font-size: 120%; }
+
     #slogan { font-size: 275%;}
     #intro { font-size: 110%;}
     #text { font-size: 90%;}
@@ -25,10 +34,17 @@
     .logo { height: 20px; }
     .leftColumn {font-size: 90%; }
     .rightColumn { font-size: 90%; }
+
     #image { width: 40vw; }
+
+    .workTitle { font-size: 170%; }
+    .workSubTitle { font-size: 100%; }
+    .workText { font-size: 75%; }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1400px){
+    .navButton { font-size: 120%; }
+
     #slogan { font-size: 200%;}
     #intro { font-size: 100%;}
     #text { font-size: 80%;}
@@ -36,7 +52,11 @@
     .logo { height: 20px; }
     .leftColumn {font-size: 80%; }
     .rightColumn { font-size: 80%; }
+
     #image { width: 50vw; }
+
+    .workTitle { font-size: 150%; }
+    .workSubTitle { font-size: 120%; }
 }
 
 @font-face {
@@ -83,7 +103,6 @@ html, body {
     margin-left: 20%;
     display: block;
     color: black;
-    font-size: 160%;
     font-family: thryromanes;
 }
 
@@ -288,11 +307,8 @@ html, body {
     color: #1c1c1b;
     background-color: transparent;
     text-align: left;
-    font-size: 200%;
     display: none;
-    /*change to lighter font style*/
     font-family: thryromanes;
-    font-weight: lighter;
 }
 
 .workSubTitle {
@@ -303,7 +319,6 @@ html, body {
     z-index: 9;
     color: #1c1c1b;
     text-align: left;
-    font-size: 120%;
     display: none;
     font-family: "Calibri Light";
 }
@@ -316,7 +331,6 @@ html, body {
     z-index: 9;
     color: #1c1c1b;
     text-align: left;
-    font-size: 90%;
     display: none;
     font-family: "Calibri Light";
 }

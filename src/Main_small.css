@@ -36,7 +36,7 @@ html, body {
 #about {
     background-color: #fffffa;
     height: auto;
-    text-align: center;
+    text-align: left;
     padding: 3vw;
 }
 
@@ -46,9 +46,27 @@ html, body {
     background-color: #fffffa;
 }
 
+#text {
+    font-size: 80%;
+}
+
 #slogan {
-    font-size: 150%;
-    font-family: Georgia;
+    font-size: 190%;
+    font-family: thryromanes;
+}
+
+#cvButton {
+    text-align: center;
+    font-size: 120%;
+}
+
+#contact {
+    font-size: 80%;
+    text-align: center;
+}
+
+.logo {
+    height: 20px;
 }
 
 #cv { display: none; }
@@ -63,9 +81,38 @@ html, body {
 
 .projectPanel {
     background-color: #fffffa;
-    font-family: Calibri;
-    height: 20vh;
+    font-family: Calibri light;
+    height: 100vh;
     margin-top: -2.5vh;
+    padding-left: 5%;
+    padding-right: 5%;
     border-top: solid black 1px;
     text-align: center;
 }
+
+.workTitle {
+    font-family: thryromanes;
+    font-size: 140%;
+}
+
+.workSubTitle {
+    font-size: 100%;
+}
+
+.workText {
+    font-size: 80%;
+}
+
+.workImage {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10vh;
+    height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;   
+}
+
+#workAImage { background-image: url("lib/languagemap_small.jpg"); }
+#workBImage { background-image: url("lib/avaserala_small.jpg"); }
+#workCImage { background-image: url("lib/PlanetLabs_small.jpg"); }
