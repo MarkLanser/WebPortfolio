@@ -12,16 +12,17 @@
     #slogan { font-size: 350%;}
     #intro { font-size: 150%;}
     #text { font-size: 110%;}
-    #contact { font-size: 110%; margin-top: 65vh;}
+    #contact { font-size: 110%; margin-top: 52%;}
     .logo { height: 30px; }
     .leftColumn {font-size: 110%; }
     .rightColumn { font-size: 110%; }
 
-    #image { width: 40vw; }
+    /* #image { width: 40vw; } */
 
-    .workTitle { font-size: 200%; }
-    .workTitle { font-size: 120%; }
-    .workText { font-size: 90%; }
+    .workTitle { font-size: 250%; margin-top: 30%;}
+    .workSubTitle { font-size: 120%; margin-top: 50%;}
+    .workText { font-size: 90%; margin-top: 70%;}
+    .workImage { margin-top: 95%; }
 }
 
 @media screen and (min-width: 1400px) and (max-width: 1800px) {
@@ -35,14 +36,15 @@
     .leftColumn {font-size: 90%; }
     .rightColumn { font-size: 90%; }
 
-    #image { width: 40vw; }
+    /* #image { width: 40vw; } */
 
-    .workTitle { font-size: 170%; }
-    .workSubTitle { font-size: 100%; }
-    .workText { font-size: 75%; }
+    .workTitle { font-size: 190%; margin-top: 22vh;}
+    .workSubTitle { font-size: 120%; margin-top: 32vh;}
+    .workText { font-size: 90%; margin-top: 42vh; }
+    .workImage { margin-top: 65vh; }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1400px){
+@media screen and (min-width: 900px) and (max-width: 1400px){
     .navButton { font-size: 120%; }
 
     #slogan { font-size: 200%;}
@@ -53,10 +55,12 @@
     .leftColumn {font-size: 80%; }
     .rightColumn { font-size: 80%; }
 
-    #image { width: 50vw; }
+    /* #image { width: 50vw; } */
 
-    .workTitle { font-size: 150%; }
-    .workSubTitle { font-size: 120%; }
+    .workTitle { font-size: 150%; margin-top: 15vh;}
+    .workSubTitle { font-size: 100%; margin-top: 22vh;}
+    .workText { font-size: 90%; margin-top: 35vh;}
+    .workImage { margin-top: 62vh; }
 }
 
 @font-face {
@@ -82,11 +86,16 @@ html, body {
     display: block;
     margin-left: 1%;
     width: 7%;
-    height: 22vh;
+    height: 21%;
     position: fixed;
     z-index: 999;
-    background-color: white;
-    padding-top: 15vh;
+    background-color: #fffffa;
+    padding-top: 8%;
+}
+
+.menuImage {
+    width: 80%;
+    margin-left: -10%;
 }
 
 .navButton:link, a:visited {
@@ -99,11 +108,10 @@ html, body {
 }
 
 .navButton {
-    margin-top: 20%;
+    margin-top: 15%;
     margin-left: 20%;
     display: block;
     color: black;
-    font-family: thryromanes;
 }
 
 
@@ -111,11 +119,11 @@ html, body {
 /*_____________________________Home_________________________*/
 
 #image {
-    height: 100vh;
+    height: 100%;
     position: fixed;
-    background-image: url("./lib/Background.jpg");
+    background-image: url("./lib/painting_01.jpeg");
     background-size: cover;
-    margin-left: -2%;
+    width: 100%;
 }
 
 
@@ -125,7 +133,7 @@ html, body {
 #about {
     margin-top: -100%;
     width: 67.5%;
-    height: 110vh;
+    height: 110%;
     position: fixed;
     background-color: #fffffa;
     margin-left: 32.5%;
@@ -140,19 +148,18 @@ html, body {
 
 #slogan {
     position: absolute;
-    margin-top: 8vh;
+    margin-top: 8%;
     width: 100%;
     min-height: 8%;
     background-color: #fffffa;
     text-align: center;
-    font-family: thryromanes;
     color: #1c1c1b;
     z-index: 20;
 }
 
 #intro {
     position: absolute;
-    margin-top: 25vh;
+    margin-top: 22%;
     width: 100%;
     background-color: #fffffa;
     text-align: center;
@@ -161,7 +168,7 @@ html, body {
 
 #text {
     position: absolute;
-    margin-top: 42vh;
+    margin-top: 35%;
     width: 100%;
     background-color: #fffffa;
     text-align: center;
@@ -176,9 +183,9 @@ html, body {
 
 
 #cvButton {
-    margin-left: 39%;
-    margin-top: 1vh;
-    width: 21%;
+    margin-left: 40%;
+    margin-top: 2%;
+    width: 20%;
     height: 3%;
     border: 1px solid #1c1c1b;
     border-radius: 20px;
@@ -207,16 +214,12 @@ html, body {
     margin-left: 100%;
     z-index: 21;
 }
-
-#cvHeader {
-    position: absolute;
-    margin-top: 5vh;
-    width: 100%;
-    min-height: 5%;
-    text-align: center;
-    font-size: 200%;
-    z-index: 30;
+.cvLink {
+    text-decoration: underline;
+    color: #1c1c1b;
 }
+
+.cvLink:hover { text-decoration: underline #1c1c1b; }
 
 #educationHeader {
     text-align: center;
@@ -224,7 +227,7 @@ html, body {
 }
 
 #education {
-    margin-top: 15vh;
+    margin-top: 5%;
     z-index: 29;
     height: 10%;
     background-color: #fffffa;
@@ -233,7 +236,7 @@ html, body {
 
 #work {
     z-index: 28;
-    margin-top: 20vh;
+    margin-top: 30%;
     background-color: #fffffa;
     position: relative;
 }
@@ -248,7 +251,7 @@ html, body {
 #workR {}
 
 #languages {
-    margin-top: 15vh;
+    margin-top: 30%;
     z-index: 24;
     background-color: #fffffa;
     position: relative;
@@ -278,7 +281,7 @@ html, body {
 #workPanel {
     position: fixed;
     width: 67.5%;
-    height: 100vh;
+    height: 100%;
     background-color: #fffffa;
     z-index: 5;
     margin-top: 100%;
@@ -288,7 +291,8 @@ html, body {
 .projectPanel {
     position: fixed;
     width: 22.5%;
-    height: 100vh;
+    height: 95%;
+    margin-top: 5%;
     background-color: #fffffa;
 }
 
@@ -300,36 +304,35 @@ html, body {
 
 .workTitle {
     width: 100%;
+    padding-bottom: 2%;
     position: absolute;
-    margin-top: 25vh;
     margin-left: 20%;
-    z-index: 8;
+    z-index: 20;
     color: #1c1c1b;
-    background-color: transparent;
+    background-color: #fffffa;
     text-align: left;
     display: none;
-    font-family: thryromanes;
 }
 
 .workSubTitle {
     width: 100%;
     position: absolute;
-    margin-top: 35vh;
     margin-left: 20%;
-    z-index: 9;
+    z-index: 19;
     color: #1c1c1b;
+    background-color: #fffffa;
     text-align: left;
     display: none;
     font-family: "Calibri Light";
 }
 
 .workText {
-    width: 55%;
+    width: 65%;
     position: absolute;
-    margin-top: 42vh;
     margin-left: 20%;
-    z-index: 9;
+    z-index: 18;
     color: #1c1c1b;
+    background-color: #fffffa;
     text-align: left;
     display: none;
     font-family: "Calibri Light";
@@ -338,12 +341,12 @@ html, body {
 .workImage {
     width: 60%;
     margin-left: 20%;
-    margin-top: 58vh;
-    height: 15vh;
+    height: 15%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     display: none;
+    z-index: 17;
 }
 
 #workAImage { background-image: url("lib/languagemap_small.jpg"); }
