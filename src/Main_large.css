@@ -7,9 +7,9 @@
 
 
 @media screen and (min-width: 1800px) {
-    .navButton { font-size: 160%; }
+    .navButton { font-size: 130%; }
 
-    #slogan { font-size: 350%;}
+    #slogan { font-size: 250%;}
     #intro { font-size: 150%;}
     #text { font-size: 110%;}
     #contact { font-size: 110%; margin-top: 52%;}
@@ -19,7 +19,7 @@
 
     /* #image { width: 40vw; } */
 
-    .workTitle { font-size: 250%; margin-top: 30%;}
+    .workTitle { font-size: 180%; margin-top: 30%;}
     .workSubTitle { font-size: 120%; margin-top: 50%;}
     .workText { font-size: 90%; margin-top: 70%;}
     .workImage { margin-top: 95%; }
@@ -64,14 +64,19 @@
 }
 
 @font-face {
-    font-family: thryromanes;
-    src: url(./lib/thryromanes.ttf);
+    font-family: neou;
+    src: url(./lib/Neou-Thin.otf);
 }
 
 html, body {
     margin: 0px;
     height: 100%;
-    background-color: #c3d2d5;
+    /* fallback for old browsers */
+    background: rgb(187,210,197);
+    background: linear-gradient(90deg, 
+        rgba(187,210,197,1) 0%, 
+        rgba(83,105,118,1) 29%, 
+        rgba(41,46,73,1) 100%);     
     overflow: hidden;
     outline:none;
     -webkit-touch-callout: none;
@@ -84,7 +89,8 @@ html, body {
 
 #menu {
     display: block;
-    margin-left: 1%;
+    box-shadow: 3px 3px 10px #292E49;
+    margin-left: 2%;
     width: 7%;
     height: 21%;
     position: fixed;
@@ -104,14 +110,16 @@ html, body {
 }
 
 .navButton:hover {
-    text-decoration: underline black;
+    border-left: 2px solid #292E49;
 }
 
 .navButton {
     margin-top: 15%;
-    margin-left: 20%;
+    padding-left: 15%;
     display: block;
-    color: black;
+    color: #292E49;
+    font-family: neou;
+    letter-spacing: 4px;
 }
 
 
@@ -121,9 +129,37 @@ html, body {
 #image {
     height: 100%;
     position: fixed;
-    background-image: url("./lib/painting_01.jpeg");
+    /* background-image: url("./lib/painting_01.jpeg"); */
     background-size: cover;
     width: 100%;
+}
+
+#landingpageContainer {
+    width: 67.5%;
+    height: 100%;
+    position: fixed;
+    margin-left: 32.5%;
+}
+
+#landingpageHeader {
+    width: 100%;
+    text-align: center;
+    margin-top: 30%;
+    color: white;
+    font-size: 450%;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+#landingpageSubheader {
+    width: 100%;
+    margin-top: 2%;
+    color: white;
+    font-size: 160%;
+    text-align: center;
+    font-family: neou;
+    letter-spacing: 4px;
 }
 
 
@@ -132,6 +168,7 @@ html, body {
 
 #about {
     margin-top: -100%;
+    box-shadow: 10px 10px 10px #292E49;
     width: 67.5%;
     height: 110%;
     position: fixed;
@@ -155,6 +192,8 @@ html, body {
     text-align: center;
     color: #1c1c1b;
     z-index: 20;
+    font-family: neou;
+    letter-spacing: 4px;
 }
 
 #intro {
@@ -168,7 +207,7 @@ html, body {
 
 #text {
     position: absolute;
-    margin-top: 35%;
+    margin-top: 30%;
     width: 100%;
     background-color: #fffffa;
     text-align: center;
@@ -184,7 +223,7 @@ html, body {
 
 #cvButton {
     margin-left: 40%;
-    margin-top: 2%;
+    margin-top: 5%;
     width: 20%;
     height: 3%;
     border: 1px solid #1c1c1b;
@@ -220,10 +259,12 @@ html, body {
 }
 
 .cvLink:hover { text-decoration: underline #1c1c1b; }
-
+    
 #educationHeader {
     text-align: center;
-    font-size: 150%;
+    font-size: 130%;
+    font-family: neou;
+    letter-spacing: 4px;
 }
 
 #education {
@@ -243,12 +284,10 @@ html, body {
 
 #workHeader {
     text-align: center;
-    font-size: 150%;
+    font-size: 130%;
+    font-family: neou;
+    letter-spacing: 4px;
 }
-
-#workL {}
-
-#workR {}
 
 #languages {
     margin-top: 30%;
@@ -259,7 +298,9 @@ html, body {
 
 #languagesHeader {
     text-align: center;
-    font-size: 150%;
+    font-size: 130%;
+    font-family: neou;
+    letter-spacing: 4px;
 }
 
 .leftColumn {
@@ -282,6 +323,7 @@ html, body {
     position: fixed;
     width: 67.5%;
     height: 100%;
+    box-shadow: 10px 10px 10px #292E49;
     background-color: #fffffa;
     z-index: 5;
     margin-top: 100%;
@@ -312,6 +354,8 @@ html, body {
     background-color: #fffffa;
     text-align: left;
     display: none;
+    font-family: neou;
+    letter-spacing: 4px;
 }
 
 .workSubTitle {

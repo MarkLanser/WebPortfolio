@@ -1,140 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mark Lanser</title>
-        <link rel='stylesheet' media="screen and (min-width: 900px)" href='Main_large.css' />
-        <link rel='stylesheet' media="screen and (max-width: 900px)" href='Main_small.css' />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="Animation.js"></script>
-    </head>
-    <body>
 
-        <!--website wide menu-->
-        <div id="menu">
-            <a id='homeLink' class ='navButton' href=''>Home</a>
-            <a id='aboutLink' class ='navButton' href=''>About</a>
-            <a id='workLink' class ='navButton' href=''>Work</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Lanser</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel='stylesheet' media="screen and (min-width: 900px)" href='Main_large.css' />
+    <link rel='stylesheet' media="screen and (max-width: 900px)" href='Main_small.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Animation.js"></script>
+</head>
+
+<body>
+
+    <!--website wide menu-->
+    <div id="menu">
+        <a id='homeLink' class='navButton' href=''>HOME</a>
+        <a id='aboutLink' class='navButton' href=''>ABOUT</a>
+        <a id='workLink' class='navButton' href=''>WORK</a>
+    </div>
+
+    <!--homepage-->
+    <div id="image">
+        <div id="landingpageContainer">
+            <div id="landingpageHeader">L</div>
+            <div id="landingpageDivider" />
+            <div id="landingpageSubheader">Mark Lanser</div>
+        </div>
+    </div>
+
+    <!--About page-->
+    <div id="about">
+        <div id="slogan">
+            <p>"Reducing the human footprint on earth" *</p>
         </div>
 
-        <!--homepage-->
-        <div id="image"></div>
+        <div id="intro" class="aboutText">
+            <p>Third year software engineering student at the
+                <br> University of Applied Sciences Utrecht (The Netherlands).
+            </p>
+        </div>
 
-        <!--Black filter-->
-        <div id="filter"></div>
+        <div id="text" class="aboutText">
+            <p>The quote above is my personal 'why'. 
+                <br> It's what drives me and my everyday actions.
+            </p>
+            <a id="CVLink" href=''>
+                <div id="cvButton" class="aboutText">Resume</div>
+            </a>
+        </div>
 
-        <!--About page-->
-        <div id="about">
-
-            <div id="slogan">
-                <p>"Reducing  the  human  footprint  on  earth" *</p>
-            </div>
-
-            <div id="intro" class="aboutText">
-                <p>My name is Mark.<br> I am a third year software engineering student at the<br>
-                    University of Applied Sciences Utrecht (The Netherlands). I have a multitude of interests, <br>
-                    of which you can find a few under 'Work'.
-                </p>
-            </div>
-
-            <div id="text" class="aboutText">
-                <p>The quote above is my personal 'why'. Although there is no master plan <br>
-                    (at least not yet), it's what drives me and my everyday actions. <br> 
-                    
-                </p>
-                <a id="CVLink" href=''><div id="cvButton" class="aboutText">Resume</div></a>
-            </div>
-
-            <div id="contact" class="aboutText">
-                <p>Markklanser@gmail.com<br><br>
-                <a target="_blank" href="https://github.com/MarkLanser"><img class="logo" src="./lib/GitHub.png"/></a>
-                <a target="_blank" href="https://www.linkedin.com/in/mark-lanser/"><img id="LinkedIn" class="logo" src="./lib/LinkedIn.png"/></a>
+        <div id="contact" class="aboutText">
+            <p>Markklanser@gmail.com
+                <br>
+                <br>
+                <a target="_blank" href="https://github.com/MarkLanser">
+                    <img class="logo" src="./lib/GitHub.png" />
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/mark-lanser/">
+                    <img id="LinkedIn" class="logo" src="./lib/LinkedIn.png" />
+                </a>
                 <p>* trying to </p>
+        </div>
+
+        <div id="cv">
+            <div id="education">
+                <div id="educationHeader" class="aboutText">EDUCATION</div>
+                <div id="educationL" class="aboutText leftColumn">
+                    <p>2018/09 - 2019/02
+                        <br>
+                    </p>
+                    <p>2016/09 - NOW</p>
+                    <p>2014 - 2015</p>
+                    <p>2009 - 2014</p>
+                    <br>
+                </div>
+                <div id="educationR" class="aboutText rightColumn">
+                    <p>Internship at
+                        <a class="cvLink" target="_blank" href="https://www.expeditors.com">Expeditors International</a>
+                    </p>
+                    <p>Software & Information Engineering
+                        <br> University of Applied Sciences Utrecht</p>
+                    <p>Design Academy Eindhoven</p>
+                    <p>HAVO Corlaer College Nijkerk</p>
+                </div>
+            </div>
+            <div id="work">
+                <div id="workHeader">WORK EXPERIENCE</div>
+                <div id="workL" class="aboutText leftColumn">
+                    <p>2018/07 - NOW</p>
+                    <p>2018/07 - 2018/11</p>
+                    <p>2013 - 2017</p>
+                </div>
+                <div id="workR" class="aboutText rightColumn">
+                    <p>Junior Software Engineer at
+                        <a class="cvLink" target="_blank" href="https://www.sundata.nl">SunData</a>
+                    </p>
+                    <p>Junior Software Engineer at
+                        <a class="cvLink" target="_blank" href="https://www.rysst.nl">RYSST</a>
+                    </p>
+                    <p>Retail and sales jobs</p>
+                </div>
             </div>
 
-            <div id="cv">
-                <div id="education">
-                    <div id="educationHeader" class="aboutText">EDUCATION</div>
-                    <div id="educationL" class="aboutText leftColumn">
-                        <p>2018/09 - 2019/02<br></p>
-                        <p>2016/09 - NOW</p>
-                        <p>2014 - 2015</p>
-                        <p>2009 - 2014</p><br>
-                    </div>
-                    <div id="educationR" class="aboutText rightColumn">
-                        <p>Internship at <a class="cvLink" target="_blank" href="https://www.expeditors.com">Expeditors International</a></p>
-                        <p>Software & Information Engineering <br> University of Applied Sciences Utrecht</p>
-                        <p>Design Academy Eindhoven</p>
-                        <p>HAVO Corlaer College Nijkerk</p>
-                    </div>
+            <div id="languages">
+                <div id="languagesHeader">LANGUAGES</div>
+                <div id="languagesL" class="aboutText leftColumn">
+                    <!--TODO add icon pngs-->
+                    <p>Dutch (Nederlands)
+                        <br>
+                    </p>
+                    <p>English (VS/UK)
+                        <br>
+                    </p>
+                    <p>French (Français)
+                        <br>
+                    </p>
+                    <p>German (Deutsch)
+                        <br>
+                    </p>
+                    <p>Chinese (中文)
+                        <br>
+                    </p>
                 </div>
-                <div id="work">
-                    <div id="workHeader" class="aboutText">WORK</div>
-                    <div id="workL" class="aboutText leftColumn">
-                        <p>2018/07 - NOW</p>
-                        <p>2018/07 - NOW</p>
-                        <p>2013 - 2017</p>
-                    </div>
-                    <div id="workR" class="aboutText rightColumn">
-                        <p>Software Engineer at <a class="cvLink" target="_blank" href="https://www.sundata.nl">SunData</a></p>
-                        <p>Software Engineer at <a class="cvLink" target="_blank" href="https://www.rysst.nl">RYSST</a></p>
-                        <p>Retail and sales jobs</p>
-                    </div>
-                </div>
-
-                <div id="languages" >
-                    <div id="languagesHeader" class="aboutText">LANGUAGES</div>
-                    <div id="languagesL" class="aboutText leftColumn">
-                        <!--TODO add icon pngs-->
-                        <p>Dutch (Nederlands)<br></p>
-                        <p>English (VS/UK)<br></p>
-                        <p>French (Français)<br></p>
-                        <p>German (Deutsch)<br></p>
-                        <p>Chinese (中文)<br></p>
-                    </div>
-                    <div id="languagesR" class="aboutText rightColumn">
-                        <p>Native language<br>
-                        <p>Fluent<br>
-                        <p>Basic knowledge<br>
-                        <p>Basic knowledge<br>
-                        <p>Basic knowledge<br>
-                    </div>
+                <div id="languagesR" class="aboutText rightColumn">
+                    <p>Native language
+                        <br>
+                        <p>Fluent
+                            <br>
+                            <p>Basic knowledge
+                                <br>
+                                <p>Basic knowledge
+                                    <br>
+                                    <p>Basic knowledge
+                                        <br>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!--Work page-->
-        <!--first project panel-->
+    <!--Work page-->
+    <!--first project panel-->
+    <!--TODO surround with link-->
+    <div id="workPanel">
+        <div id="workA" class="projectPanel">
+            <p id="workATitle" class="workTitle">Language Map</p>
+            <p id="workASubTitle" class="workSubTitle">A Scratchmap for Languages
+                <br> Alpha release</p>
+            <p class="workText">Using the real world example of scratching the countries you have been to, this app allows you to "scratch" the
+                languages you speak. In turn you receive a worldmap with all the countries you are able to reach.</p>
+            <div id="workAImage" class="workImage"></div>
+        </div>
+        <!--second project panel-->
         <!--TODO surround with link-->
-        <div id="workPanel">
-            <div id="workA" class="projectPanel">
-                <p id="workATitle" class="workTitle">Language Map</p>
-                <p id="workASubTitle" class="workSubTitle">A Scratchmap for Languages <br> Alpha release</p>
-                <p class="workText">Using the real world example of scratching the countries you have been to,
-                    this app allows you to "scratch" the languages you speak. In turn you receive a worldmap
-                    with all the countries you are able to reach.</p>
-                <div id="workAImage" class="workImage"></div>
-            </div>
-            <!--second project panel-->
-            <!--TODO surround with link-->
-            <div id="workB" class="projectPanel">
-                <p id="workBTitle" class="workTitle">Avaserala</p>
-                <p id="workBSubTitle" class="workSubTitle">A "Smart" Light<br> Work in Progress</p>
-                <p class="workText">Inspired by the decor of the series The Expanse. This standing lamp
-                    uses Voice. Each of the 60 LEDs is individually adressable, which produces a wide range of
-                    available colors and scenes. </p>
-                <div id="workBImage" class="workImage"></div>
-            </div>
-            <!--third project panel-->
-            <!--TODO surround with link-->
-            <div id="workC" class="projectPanel">
-                <p id="workCTitle" class="workTitle">Planet Labs</p>
-                <p id="workCSubTitle" class="workSubTitle">Using data from sattelite imagery <br> Coming Soon</p>
-                <p class="workText">Although in the brainstorm phase, using daily
-                    sattelite imagery is an exciting project. Application can be broad or really specific.</p>
-                <div id="workCImage" class="workImage"></div>
-            </div>
+        <div id="workB" class="projectPanel">
+            <p id="workBTitle" class="workTitle">Avaserala</p>
+            <p id="workBSubTitle" class="workSubTitle">A "Smart" Light
+                <br> Work in Progress</p>
+            <p class="workText">Inspired by the decor of the series The Expanse. This standing lamp uses Voice. Each of the 60 LEDs is individually
+                adressable, which produces a wide range of available colors and scenes. </p>
+            <div id="workBImage" class="workImage"></div>
         </div>
-    </body>
+        <!--third project panel-->
+        <!--TODO surround with link-->
+        <div id="workC" class="projectPanel">
+            <p id="workCTitle" class="workTitle">Planet Labs</p>
+            <p id="workCSubTitle" class="workSubTitle">Using data from sattelite imagery
+                <br> Coming Soon</p>
+            <p class="workText">Although in the brainstorm phase, using daily sattelite imagery is an exciting project. Application can be broad
+                or really specific.</p>
+            <div id="workCImage" class="workImage"></div>
+        </div>
+    </div>
+</body>
+
 </html>
